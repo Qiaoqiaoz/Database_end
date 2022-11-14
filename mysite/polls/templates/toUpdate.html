@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>更新</title>
+</head>
+<body>
+<form action="/polls/update/" method="get">
+    {% csrf_token %}
+    <p><label>用户名：</label><input name = "user"></p>
+    <p><label>密码：</label><input name = "pwd"></p>
+    <input type="submit" value="修改">
+</form>
+</body>
+</html>

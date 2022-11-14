@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>删除菜品</title>
+</head>
+<body>
+<form action="/polls/delete_food/" method="get">
+    {% csrf_token %}
+    <p><label>菜品id：</label><input name = "food_id"></p>
+    <input type="submit" value="删除">
+</form>
+</body>
+</html>

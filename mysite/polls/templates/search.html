@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查询</title>
+</head>
+<body>
+<form action="/polls/search/" method="get">
+    {% csrf_token %}
+    <p><label>用户名：</label><input name = "user"></p>
+    <input type="submit" value="查询">
+</form>
+</body>
+</html>

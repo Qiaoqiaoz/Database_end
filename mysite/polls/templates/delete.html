@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注销用户</title>
+</head>
+<body>
+<form action="/polls/delete/" method="get">
+    {% csrf_token %}
+    <p><label>用户名：</label><input name = "user"></p>
+    <input type="submit" value="注销">
+</form>
+</body>
+</html>
